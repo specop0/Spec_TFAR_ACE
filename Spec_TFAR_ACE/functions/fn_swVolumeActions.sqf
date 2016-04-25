@@ -1,4 +1,4 @@
-params [ "_target", "_caller"];
+params ["_target","_caller"];
 private _actions = [];
 for "_volume" from 0 to 9 do {
 	private _action = [str _string, format ["%1%2",(_volume * 10) + 10,"%"], "", {
