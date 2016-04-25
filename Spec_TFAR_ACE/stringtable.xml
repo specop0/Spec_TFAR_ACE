@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project ID="Arma2">
-	<Package ID="Missions">
-		<Container ID="A3RU_MissionInformation">
-			<Key ID="STR_TFAR_volume">
-				<Original>
-					Volume
-				</Original>
-				<German>
-					Lautstärke
-				</German>
-			</Key>
-			<Key ID="STR_TFAR_channel">
-				<Original>
-					Channel
-				</Original>
-				<German>
-					Kanal
-				</German>
-			</Key>
-			<Key ID="STR_TFAR_stereo">
-				<Original>
-					Stereo
-				</Original>
-				<German>
-					Stereo
-				</German>
-			</Key>
-			<Key ID="STR_TFAR_voice">
-				<Original>
-					Voice
-				</Original>
-				<German>
-					Stimme
-				</German>
-			</Key>
-			<Key ID="STR_TFAR_additional">
-				<Original>
-					Additional
-				</Original>
-				<German>
-					Additional
-				</German>
-			</Key>
-			<Key ID="STR_TFAR_noAdditional">
-				<Original>
-					No Additional
-				</Original>
-				<German>
-					Kein zusätzlicher Kanal
-				</German>
-			</Key>
-			<Key ID="STR_TFAR_swFreq">
-				<Original>
-					%1:&lt;br/&gt;%2MHz
-				</Original>
-			</Key>
-			<Key ID="STR_TFAR_lrFreq">
-				<Original>
-					%1:&lt;br/&gt;%2MHz
-				</Original>
-			</Key>
-			<Key ID="STR_TFAR_changeStereoButCurrentChannelIsAdditional">
-				<Original>
-					&lt;t size=2 color=&apos;#FF0000&apos;&gt;Current and Additional Channel are the same.&lt;/t&gt;&lt;br/&gt;Switch the Channel or disable the Additional Channel to change Stereo Settings.
-				</Original>
-				<German>
-					&lt;t size=2  color=&apos;#FF0000&apos;&gt;Ausgewählter und zusätzlicher Kanal sind identisch.&lt;/t&gt;&lt;br/&gt;Wechsel den Kanal oder deaktivere den zusätzliche Kanal um die Stereo Einstellungen zu ändern.
-				</German>
-			</Key>
-		</Container>
-	</Package>
+    <Package ID="Missions">
+        <Container ID="A3RU_MissionInformation">
+            <Key ID="STR_TFAR_volume">
+                <Original>
+                    Volume
+                </Original>
+                <German>
+                    Lautstärke
+                </German>
+            </Key>
+            <Key ID="STR_TFAR_channel">
+                <Original>
+                    Channel
+                </Original>
+                <German>
+                    Kanal
+                </German>
+            </Key>
+            <Key ID="STR_TFAR_stereo">
+                <Original>
+                    Stereo
+                </Original>
+                <German>
+                    Stereo
+                </German>
+            </Key>
+            <Key ID="STR_TFAR_voice">
+                <Original>
+                    Voice
+                </Original>
+                <German>
+                    Stimme
+                </German>
+            </Key>
+            <Key ID="STR_TFAR_additional">
+                <Original>
+                    Additional
+                </Original>
+                <German>
+                    Additional
+                </German>
+            </Key>
+            <Key ID="STR_TFAR_noAdditional">
+                <Original>
+                    No Additional
+                </Original>
+                <German>
+                    Kein zusätzlicher Kanal
+                </German>
+            </Key>
+            <Key ID="STR_TFAR_swFreq">
+                <Original>
+                    %1:&lt;br/&gt;%2MHz
+                </Original>
+            </Key>
+            <Key ID="STR_TFAR_lrFreq">
+                <Original>
+                    %1:&lt;br/&gt;%2MHz
+                </Original>
+            </Key>
+            <Key ID="STR_TFAR_changeStereoButCurrentChannelIsAdditional">
+                <Original>
+                    &lt;t size=2 color=&apos;#FF0000&apos;&gt;Current and Additional Channel are the same.&lt;/t&gt;&lt;br/&gt;Switch the Channel or disable the Additional Channel to change Stereo Settings.
+                </Original>
+                <German>
+                    &lt;t size=2  color=&apos;#FF0000&apos;&gt;Ausgewählter und zusätzlicher Kanal sind identisch.&lt;/t&gt;&lt;br/&gt;Wechsel den Kanal oder deaktivere den zusätzliche Kanal um die Stereo Einstellungen zu ändern.
+                </German>
+            </Key>
+        </Container>
+    </Package>
 </Project>
