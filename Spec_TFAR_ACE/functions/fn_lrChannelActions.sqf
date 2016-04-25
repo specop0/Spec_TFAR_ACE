@@ -1,4 +1,4 @@
-params [ "_target", "_caller"];
+params ["_target","_caller"];
 private _actions = [];
 private _lrRadio = call TFAR_fnc_activeLrRadio;
 private _settings = _lrRadio call TFAR_fnc_getLrSettings;

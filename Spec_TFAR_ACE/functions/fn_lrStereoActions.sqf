@@ -1,4 +1,4 @@
-params [ "_target", "_caller"];
+params ["_target","_caller"];
 private _stereoSettings = [
 	[0, localize "STR_stereo_settings_0"],
 	[1, localize "STR_stereo_settings_1"],

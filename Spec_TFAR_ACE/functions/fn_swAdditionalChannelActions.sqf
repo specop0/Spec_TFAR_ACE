@@ -1,4 +1,4 @@
-params [ "_target", "_caller"];
+params ["_target","_caller"];
 private _actions = [];
 private _swRadio = call TFAR_fnc_activeSwRadio;
 private _settings = _swRadio call TFAR_fnc_getSwSettings;
