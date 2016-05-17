@@ -8,6 +8,7 @@ class CfgFunctions {
             class lrStereoActions {};
             class lrVolumeActions {};
             class preInit { preInit = 1; };
+            class postInit { postInit = 1; };
             class swAdditionalChannelActions {};
             class swAdditionalStereoActions {};
             class swChannelActions {};
