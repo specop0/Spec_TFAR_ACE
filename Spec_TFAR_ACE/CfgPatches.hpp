@@ -3,6 +3,6 @@
         units[] = {};
         weapons[] = {};
         requiredAddons[] = {};
-        author[] = {"SpecOp0"};
+        author = "SpecOp0";
     };
 };
