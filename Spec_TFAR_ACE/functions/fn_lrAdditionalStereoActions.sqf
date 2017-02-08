@@ -12,7 +12,7 @@ private _actions = [];
     private _action = [_stereoString, _stereoString, "", {
         (_this select 2) params ["_stereoNumber"];
         private _lrRadio = call TFAR_fnc_activeLrRadio;
-        [_lrRadio select 0, _lrRadio select 1, _stereoNumber] call TFAR_fnc_setAdditionalLrStereo;
+        [_lrRadio, _stereoNumber] call TFAR_fnc_setAdditionalLrStereo;
         [_lrRadio] call TFAR_fnc_ShowRadioVolume;
     }, {true}, {}, [_stereoNumber] ] call ace_interact_menu_fnc_createAction;
     _actions pushBack [_action,[],_caller];
@@ -21,7 +21,7 @@ private _actionHeadphones = [localize "STR_speakers_settings_false", localize "S
         private _lrRadio = call TFAR_fnc_activeLrRadio;
         private _settings = _lrRadio call TFAR_fnc_getLrSettings;
         if (_lrRadio select TFAR_LR_SPEAKER_OFFSET) then {
-            [_lrRadio select 0, _lrRadio select 1] call TFAR_fnc_setLrSpeakers;
+            _lrRadio call TFAR_fnc_setLrSpeakers;
         };
         [_lrRadio] call TFAR_fnc_ShowRadioSpeakers;
 },{true}] call ace_interact_menu_fnc_createAction;
@@ -29,7 +29,7 @@ private _actionSpeakers = [localize "STR_speakers_settings_true", localize "STR_
         private _lrRadio = call TFAR_fnc_activeLrRadio;
         private _settings = _lrRadio call TFAR_fnc_getLrSettings;
         if !(_settings select TFAR_LR_SPEAKER_OFFSET) then {
-            [_lrRadio select 0, _lrRadio select 1] call TFAR_fnc_setLrSpeakers;
+            _lrRadio call TFAR_fnc_setLrSpeakers;
         };
         [_lrRadio] call TFAR_fnc_ShowRadioSpeakers;
 },{true}] call ace_interact_menu_fnc_createAction;
