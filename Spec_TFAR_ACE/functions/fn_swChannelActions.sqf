@@ -1,8 +1,10 @@
+#include "\z\tfar\addons\core\defines.hpp"
+
 params ["_target","_caller"];
 private _actions = [];
 private _swRadio = call TFAR_fnc_ActiveSwRadio;
 private _settings = _swRadio call TFAR_fnc_getSwSettings;
-private _frequencies = _settings select TF_FREQ_OFFSET;
+private _frequencies = _settings select TFAR_FREQ_OFFSET;
 _frequencies resize (count _frequencies min 8);
 {
     private _action = [str _string, format [localize "STR_TFAR_swFreq", _forEachIndex +1, _x], "", {

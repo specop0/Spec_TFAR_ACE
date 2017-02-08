@@ -1,11 +1,13 @@
+#include "\z\tfar\addons\core\defines.hpp"
+
 params ["_target","_caller"];
 private _actions = [];
 private _lrRadio = call TFAR_fnc_activeLrRadio;
 private _settings = _lrRadio call TFAR_fnc_getLrSettings;
-private _frequencies = _settings select TF_FREQ_OFFSET;
+private _frequencies = _settings select TFAR_FREQ_OFFSET;
 _frequencies resize (count _frequencies min 9);
 {
-    private _action = [str _string, format [localize "STR_TFAR_lrFreq", _forEachIndex +1, _x], "", {
+    private _action = [str _string, format [localize "STR_TFAR_lrFreq", _forEachIndex + 1, _x], "", {
         (_this select 2) params ["_channel"];
         private _lrRadio = call TFAR_fnc_activeLrRadio;
         [_lrRadio select 0, _lrRadio select 1, _channel] call TFAR_fnc_setLrChannel;

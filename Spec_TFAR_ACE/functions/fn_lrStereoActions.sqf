@@ -1,3 +1,5 @@
+#include "\z\tfar\addons\core\defines.hpp"
+
 params ["_target","_caller"];
 private _stereoSettings = [
     [0, localize "STR_stereo_settings_0"],
@@ -11,7 +13,7 @@ private _actions = [];
         (_this select 2) params ["_stereoNumber"];
         private _lrRadio = call TFAR_fnc_activeLrRadio;
         private _settings = _lrRadio call TFAR_fnc_getLrSettings;
-        if((_settings select TF_ADDITIONAL_CHANNEL_OFFSET) != _settings select TF_ACTIVE_CHANNEL_OFFSET) then {
+        if((_settings select TFAR_ADDITIONAL_CHANNEL_OFFSET) != _settings select ACTIVE_CHANNEL_OFFSET) then {
             [_lrRadio select 0, _lrRadio select 1, _stereoNumber] call TFAR_fnc_setLrStereo;
             [_lrRadio] call TFAR_fnc_ShowRadioVolume;
         } else {
@@ -23,7 +25,7 @@ private _actions = [];
 private _actionHeadphones = [localize "STR_speakers_settings_false", localize "STR_speakers_settings_false", "", {
         private _lrRadio = call TFAR_fnc_activeLrRadio;
         private _settings = _lrRadio call TFAR_fnc_getLrSettings;
-        if (_settings select TF_LR_SPEAKER_OFFSET) then {
+        if (_settings select TFAR_LR_SPEAKER_OFFSET) then {
             [_lrRadio select 0, _lrRadio select 1] call TFAR_fnc_setLrSpeakers;
         };
         [_lrRadio] call TFAR_fnc_ShowRadioSpeakers;
@@ -31,7 +33,7 @@ private _actionHeadphones = [localize "STR_speakers_settings_false", localize "S
 private _actionSpeakers = [localize "STR_speakers_settings_true", localize "STR_speakers_settings_true", "", {
         private _lrRadio = call TFAR_fnc_activeLrRadio;
         private _settings = _lrRadio call TFAR_fnc_getLrSettings;
-        if !(_settings select TF_LR_SPEAKER_OFFSET) then {
+        if !(_settings select TFAR_LR_SPEAKER_OFFSET) then {
             [_lrRadio select 0, _lrRadio select 1] call TFAR_fnc_setLrSpeakers;
         };
         [_lrRadio] call TFAR_fnc_ShowRadioSpeakers;

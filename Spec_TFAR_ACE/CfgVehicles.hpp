@@ -48,7 +48,7 @@ class CfgVehicles {
                         statement = "[call TFAR_fnc_ActiveSwRadio, false] call TFAR_fnc_ShowRadioInfo;";
                         class Spec_TFAR_sw_additional_stereo {
                             displayName = "$STR_TFAR_stereo";
-                            condition = "(((call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwSettings) select TF_ADDITIONAL_CHANNEL_OFFSET) != -1";
+                            condition = "(((call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwSettings) select SPEC_TFAR_ADDITIONAL_CHANNEL_OFFSET) != -1";
                             exceptions[] = {"isNotInside", "isNotSitting"};
                             statement = "[call TFAR_fnc_ActiveSwRadio] call TFAR_fnc_ShowRadioVolume;";
                             insertChildren = "_this call Spec_TFAR_ACE_fnc_swAdditionalStereoActions";
@@ -94,7 +94,7 @@ class CfgVehicles {
                         statement = "[call TFAR_fnc_ActiveLrRadio, true] call TFAR_fnc_ShowRadioInfo;";
                         class Spec_TFAR_lr_additional_stereo {
                             displayName = "$STR_TFAR_stereo";
-                            condition = "(((call TFAR_fnc_ActiveLrRadio) call TFAR_fnc_getLrSettings) select TF_ADDITIONAL_CHANNEL_OFFSET) != -1";
+                            condition = "(((call TFAR_fnc_ActiveLrRadio) call TFAR_fnc_getLrSettings) select SPEC_TFAR_ADDITIONAL_CHANNEL_OFFSET) != -1";
                             exceptions[] = {"isNotInside", "isNotSitting"};
                             statement = "[call TFAR_fnc_activeLrRadio] call TFAR_fnc_ShowRadioVolume;";
                             insertChildren = "_this call Spec_TFAR_ACE_fnc_lrAdditionalStereoActions";
