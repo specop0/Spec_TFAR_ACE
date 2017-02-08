@@ -20,7 +20,7 @@ private _actions = [];
 private _actionHeadphones = [localize "STR_speakers_settings_false", localize "STR_speakers_settings_false", "", {
         private _lrRadio = call TFAR_fnc_activeLrRadio;
         private _settings = _lrRadio call TFAR_fnc_getLrSettings;
-        if (_lrRadio select TFAR_LR_SPEAKER_OFFSET) then {
+        if (_settings select TFAR_LR_SPEAKER_OFFSET) then {
             _lrRadio call TFAR_fnc_setLrSpeakers;
         };
         [_lrRadio] call TFAR_fnc_ShowRadioSpeakers;
