@@ -10,7 +10,7 @@ class CfgVehicles {
                 icon = "Spec_TFAR_ACE\resources\radio.paa";
                 class Spec_TFAR_voice {
                     displayName = "$STR_TFAR_voice";
-                    condition = 1;
+                    condition = Spec_TFAR_ace_voiceEnabled;
                     exceptions[] = {"isNotInside", "isNotSitting"};
                     statement = "";
                     icon = "Spec_TFAR_ACE\resources\voice.paa";
