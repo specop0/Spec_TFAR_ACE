@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ID="Arma2">
     <Package ID="Missions">
         <Container ID="A3RU_MissionInformation">
@@ -9,6 +9,9 @@
                 <German>
                     Lautstärke
                 </German>
+                <French>
+                    Volume
+                </French>
             </Key>
             <Key ID="STR_TFAR_channel">
                 <Original>
@@ -17,6 +20,8 @@
                 <German>
                     Kanal
                 </German>
+                <French>
+                    Canal                </French>
             </Key>
             <Key ID="STR_TFAR_stereo">
                 <Original>
@@ -25,6 +30,9 @@
                 <German>
                     Stereo
                 </German>
+                <French>
+                    Stéreo
+                </French>
             </Key>
             <Key ID="STR_TFAR_voice">
                 <Original>
@@ -33,6 +41,9 @@
                 <German>
                     Stimme
                 </German>
+                <French>
+                    Voix
+                </French>
             </Key>
             <Key ID="STR_TFAR_additional">
                 <Original>
@@ -41,6 +52,8 @@
                 <German>
                     Additional
                 </German>
+                <French>
+                    Supplémentaire                </French>
             </Key>
             <Key ID="STR_TFAR_noAdditional">
                 <Original>
@@ -49,24 +62,36 @@
                 <German>
                     Kein zusätzlicher Kanal
                 </German>
+                <French>
+                    Pas de supplémentaire
+                </French>
             </Key>
             <Key ID="STR_TFAR_swFreq">
                 <Original>
                     %1:&lt;br/&gt;%2MHz
                 </Original>
+                <French>
+                    %1:&lt;br/&gt;%2MHz
+                </French>
             </Key>
             <Key ID="STR_TFAR_lrFreq">
                 <Original>
                     %1:&lt;br/&gt;%2MHz
                 </Original>
+                <French>
+                    %1:&lt;br/&gt;%2MHz
+                </French>
             </Key>
             <Key ID="STR_TFAR_changeStereoButCurrentChannelIsAdditional">
                 <Original>
-                    &lt;t size=2 color=&apos;#FF0000&apos;&gt;Current and Additional Channel are the same.&lt;/t&gt;&lt;br/&gt;Switch the Channel or disable the Additional Channel to change Stereo Settings.
+                    &lt;t size=2 color='#FF0000'&gt;Current and Additional Channel are the same.&lt;/t&gt;&lt;br/&gt;Switch the Channel or disable the Additional Channel to change Stereo Settings.
                 </Original>
                 <German>
-                    &lt;t size=2  color=&apos;#FF0000&apos;&gt;Ausgewählter und zusätzlicher Kanal sind identisch.&lt;/t&gt;&lt;br/&gt;Wechsel den Kanal oder deaktivere den zusätzliche Kanal um die Stereo Einstellungen zu ändern.
+                    &lt;t size=2  color='#FF0000'&gt;Ausgewählter und zusätzlicher Kanal sind identisch.&lt;/t&gt;&lt;br/&gt;Wechsel den Kanal oder deaktivere den zusätzliche Kanal um die Stereo Einstellungen zu ändern.
                 </German>
+                <French>
+                    &lt;t size=2 color='#FF0000'&gt;Le canal courant et le canal supplémentaire sont identiques.&lt;/t&gt;&lt;br/&gt;Basculez de canal ou désactiver le canal supplémentaire pour changer le mode stéréo.
+                </French>
             </Key>
         </Container>
     </Package>
