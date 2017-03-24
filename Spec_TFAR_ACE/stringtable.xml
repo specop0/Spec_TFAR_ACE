@@ -21,7 +21,8 @@
                     Kanal
                 </German>
                 <French>
-                    Canal                </French>
+                    Canal
+                </French>
             </Key>
             <Key ID="STR_TFAR_stereo">
                 <Original>
@@ -53,7 +54,8 @@
                     Additional
                 </German>
                 <French>
-                    Supplémentaire                </French>
+                    Supplémentaire
+                </French>
             </Key>
             <Key ID="STR_TFAR_noAdditional">
                 <Original>
