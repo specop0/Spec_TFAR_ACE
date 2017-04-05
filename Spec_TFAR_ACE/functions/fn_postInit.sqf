@@ -13,6 +13,7 @@
     Returns:
     true
 */
+#include "\z\tfar\addons\core\defines.hpp"
 
 tf_radio_channel_name = "LaufendeMission";
 tf_radio_channel_password = "130";
@@ -31,8 +32,12 @@ TFAR_DefaultRadio_Rifleman_Independent = TFAR_DefaultRadio_Personal_Independent;
 if(hasInterface && Spec_TFAR_ace_autoWhisper) then {
     private _scriptHandle = [] spawn {
         waitUntil { sleep 0.5; !isNil "TFAR_currentUnit" };
+        // disable the serilization if setting the voice volume to whispering
+        // because now TFAR has UI indicator for the voice volume
+        disableSerialization;
         5 call TFAR_fnc_setVoiceVolume;
-        TF_speak_volume_level = "whispering";
+        TF_speak_volume_level = "yelling";
+        [] call TFAR_fnc_onSpeakVolumeChangePressed;
     };
 };
 true
