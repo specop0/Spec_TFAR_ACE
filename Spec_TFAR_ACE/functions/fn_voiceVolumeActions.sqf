@@ -1,10 +1,11 @@
 #include "\z\tfar\addons\core\defines.hpp"
+#include "const.hpp"
 
 params ["_target","_caller"];
 private _tfar = [
-    [TFAR_VOLUME_WHISPERING,localize "STR_voice_whispering","yelling"],
-    [TFAR_VOLUME_NORMAL,localize "STR_voice_normal","Whispering"],
-    [TFAR_VOLUME_YELLING,localize "STR_voice_yelling","Normal"]
+    [TFAR_VOLUME_WHISPERING,localize "STR_voice_whispering",TFAR_SPEAK_VOLUME_LEVEL_YELLING],
+    [TFAR_VOLUME_NORMAL,localize "STR_voice_normal",TFAR_SPEAK_VOLUME_LEVEL_WHISPERING],
+    [TFAR_VOLUME_YELLING,localize "STR_voice_yelling",TFAR_SPEAK_VOLUME_LEVEL_NORMAL]
 ];
 private _actions = [];
 {
