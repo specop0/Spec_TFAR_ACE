@@ -13,7 +13,6 @@
     Returns:
     true
 */
-#include "\z\tfar\addons\core\defines.hpp"
 #include "const.hpp"
 
 tf_radio_channel_name = "LaufendeMission";
@@ -36,9 +35,8 @@ if(hasInterface && Spec_TFAR_ace_autoWhisper) then {
         // disable the serilization if setting the voice volume to whispering
         // because now TFAR has UI indicator for the voice volume
         disableSerialization;
-        TFAR_VOLUME_WHISPERING call TFAR_fnc_setVoiceVolume;
         // set the volume level to the previous one and call the onSpeakVolumeChanged event
-        // this will handle the change correctly (set internal variables and show hints)
+        // this will handle the change correctly (set internal variables and show hint)
         TF_speak_volume_level = TFAR_SPEAK_VOLUME_LEVEL_YELLING;
         [] call TFAR_fnc_onSpeakVolumeChangePressed;
     };
