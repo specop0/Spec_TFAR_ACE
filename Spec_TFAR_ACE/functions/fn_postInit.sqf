@@ -26,6 +26,7 @@ TFAR_DefaultRadio_Rifleman_East = TFAR_DefaultRadio_Personal_East;
 TFAR_DefaultRadio_Rifleman_Independent = TFAR_DefaultRadio_Personal_Independent;
 
 // apply variables to TS plugin
+["serious_channelName",missionNamespace getVariable ["tf_radio_channel_name",""]] call TFAR_fnc_setPluginSetting;
 [] call TFAR_fnc_sendPluginConfig;
 
 // set auto whisper
