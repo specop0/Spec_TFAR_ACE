@@ -15,6 +15,7 @@ class CfgFunctions {
             class swStereoActions {};
             class swVolumeActions {};
             class voiceVolumeActions {};
+            class XEH_preInit {};
         };
     };
 };
