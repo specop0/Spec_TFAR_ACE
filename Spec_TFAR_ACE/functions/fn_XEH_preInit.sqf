@@ -1,9 +1,8 @@
 {
-    _x params [_variableName,_displayName];
     [
-        _variableName,
+        _x select 0,
         "CHECKBOX",
-        _displayName,
+        _x select 1,
         "Spec TFAR ACE",
         true,
         true
